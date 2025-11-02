@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://nhcpgqu6tt2i"]
+
+[ext_resource type="PackedScene" uid="uid://dwhynq5yert4q" path="res://Weapons/hit_scan_weapon.tscn" id="1_hrtej"]
+[ext_resource type="PackedScene" uid="uid://7c74q7um65vt" path="res://Weapons/SMG.glb" id="2_ops1r"]
+
+[node name="SMG" instance=ExtResource("1_hrtej")]
+
+[node name="SMG" parent="." index="0" instance=ExtResource("2_ops1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.4, -0.45)
