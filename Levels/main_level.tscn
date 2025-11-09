@@ -137,9 +137,9 @@ size = Vector3(26.4, 3, 19)
 material = ExtResource("1_8xii8")
 
 [node name="Overhang4" type="CSGBox3D" parent="NavigationRegion3D/LevelContents/Overhang3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14999962, 0, -0.10000038)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39999866, 0, -0.30000114)
 operation = 2
-size = Vector3(20.9, 3, 14)
+size = Vector3(17.2, 3, 11.8)
 material = ExtResource("1_8xii8")
 
 [node name="Overhang4" type="CSGBox3D" parent="NavigationRegion3D/LevelContents"]

@@ -4,8 +4,8 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 @onready var navigation_agent_3d: NavigationAgent3D = $NavigationAgent3D
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
-
+@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var playback: AnimationNodeStateMachinePlayback = animation_tree["parameters/playback"]
 @export var max_hitpoints := 100
 @export var attack_range := 1.5
 @export var attack_damage := 20
@@ -41,9 +41,9 @@ func _physics_process(delta: float) -> void:
 	
 	if distance <= aggro_range:
 		provoked = true
-		
+	
 	if distance <= attack_range and provoked:
-		animation_player.play("attack")
+		playback.travel("attack")
 	
 	if direction:
 		look_at_target(direction)
